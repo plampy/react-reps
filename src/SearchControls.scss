@@ -1,0 +1,27 @@
+@import './common/colors';
+
+.controls {
+  margin-bottom: 8px;
+  select {
+    padding: 8px;
+    margin-right: 16px;
+  }
+  
+  button {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 32px;
+    border-radius: 5px;
+    background-color: $cool-blue;
+    font-family:  "Roboto", sans-serif;
+    border: none;
+    cursor: pointer;
+    &:active {
+      background-color: darken($cool-blue, 10%)
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
